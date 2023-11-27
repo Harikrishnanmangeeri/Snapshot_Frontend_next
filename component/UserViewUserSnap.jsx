@@ -101,7 +101,7 @@ export default function Viewsnapuser({
   };
   const handleLike = async () => {
     dispatch(setlike({ id: item._id, user_id: profile._id }));
-    setTimeout(() => dispatch(finduser(item._id)), 50);
+    setTimeout(() => dispatch(finduser(item._id)), 300);
     setimg(true);
   };
 
